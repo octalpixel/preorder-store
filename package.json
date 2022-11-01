@@ -1,0 +1,19 @@
+{
+  "name": "preorder-store",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "web": "cd apps/store && yarn",
+    "admin": "cd apps/admin && yarn",
+    "server": "cd apps/server && yarn",
+    "watch": "yarn workspaces foreach -pi run watch",
+    "build": "yarn workspaces foreach --exclude @healthie/web -pi run build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.18.9"
+  },
+  "packageManager": "yarn@3.2.4"
+}
