@@ -10,7 +10,8 @@
     "admin": "cd apps/admin && yarn",
     "server": "cd apps/server && yarn",
     "watch": "yarn workspaces foreach -pi run watch",
-    "build": "yarn workspaces foreach --exclude @healthie/web -pi run build"
+    "build": "yarn workspaces foreach -pi run build",
+    "dev": "yarn workspaces foreach  -pi run dev"
   },
   "dependencies": {
     "@babel/runtime": "^7.18.9"
