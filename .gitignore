@@ -5,6 +5,8 @@ node_modules
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+!.yarn/install-state.gz
+.yarn/install-state.gz
 
 **/public/locales
 # expo
