@@ -34,7 +34,13 @@ module.exports = {
           "sans-serif",
         ],
       },
+      colors: {
+        amazon_blue: {
+          light: "#232F3E",
+          DEFAULT: "#131921",
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 }

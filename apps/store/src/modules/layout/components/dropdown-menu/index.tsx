@@ -11,6 +11,12 @@ import { chunk } from "lodash"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import React, { useState } from "react"
+import {
+  Bars3Icon,
+  // SearchIcon,
+  MagnifyingGlassIcon,
+  ShoppingCartIcon,
+} from "@heroicons/react/24/outline"
 
 const DropdownMenu = () => {
   const [open, setOpen] = useState(false)
@@ -37,7 +43,7 @@ const DropdownMenu = () => {
                   )}
                   onClick={() => push("/store")}
                 >
-                  Store
+                  <Bars3Icon className="h-12 p-2 text-white" />
                 </Popover.Button>
               </a>
             </Link>

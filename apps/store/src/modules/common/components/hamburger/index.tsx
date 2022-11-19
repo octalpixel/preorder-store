@@ -1,5 +1,11 @@
 import clsx from "clsx"
 import React from "react"
+import {
+  Bars3Icon,
+  // SearchIcon,
+  MagnifyingGlassIcon,
+  ShoppingCartIcon,
+} from "@heroicons/react/24/outline"
 
 type HamburgerProps = {
   setOpen: () => void
@@ -8,7 +14,8 @@ type HamburgerProps = {
 const Hamburger: React.FC<HamburgerProps> = ({ setOpen }) => {
   return (
     <button className="w-10 h-10 relative focus:outline-none" onClick={setOpen}>
-      <span className="sr-only">Open main menu</span>
+      {/* <span className="sr-only">Open main menu</span> */}
+      <Bars3Icon className="h-6 mr-1" />
       <div className="block w-5 absolute left-1/2 top-1/2 transform  -translate-x-1/2 -translate-y-1/2">
         <span
           aria-hidden="true"

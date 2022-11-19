@@ -7,6 +7,7 @@
   ],
   "scripts": {
     "web": "cd apps/store && yarn",
+    "web2": "cd apps/store-v2 && yarn",
     "admin": "cd apps/admin && yarn",
     "server": "cd apps/server && yarn",
     "watch": "yarn workspaces foreach -pi run watch",

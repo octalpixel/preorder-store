@@ -11,6 +11,12 @@ import { formatAmount, useCart } from "medusa-react"
 import Link from "next/link"
 import { Fragment } from "react"
 import { CalculatedVariant } from "types/medusa"
+import {
+  Bars3Icon,
+  // SearchIcon,
+  MagnifyingGlassIcon,
+  ShoppingCartIcon,
+} from "@heroicons/react/24/outline"
 
 const CartDropdown = () => {
   const { cart, totalItems } = useCart()
@@ -19,10 +25,19 @@ const CartDropdown = () => {
   const { state, open, close } = useCartDropdown()
 
   return (
-    <div className="h-full z-50" onMouseEnter={open} onMouseLeave={close}>
-      <Popover className="relative h-full">
+      <Popover className="relative" onMouseEnter={open} onMouseLeave={close}>
         <Link href="/cart" passHref>
-          <Popover.Button className="h-full">{`My Bag (${totalItems})`}</Popover.Button>
+          <Popover.Button className="relative link flex flex-row items-center">
+              <span className="absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold">
+                {totalItems}
+              </span>
+
+              <ShoppingCartIcon className="h-10" />
+              <p className="hidden md:inline font-extrabold md:text-sm mt-2">
+                Basket
+              </p>
+              
+          </Popover.Button>
         </Link>
         <Transition
           show={state}
@@ -137,7 +152,6 @@ const CartDropdown = () => {
           </Popover.Panel>
         </Transition>
       </Popover>
-    </div>
   )
 }
 
