@@ -4,7 +4,7 @@
 }
 
 .nav {
-    @apply relative flex flex-row justify-between py-4 md:py-4;
+    @apply relative flex items-center justify-between w-full h-full;
 }
 
 .navMenu {

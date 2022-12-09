@@ -1,9 +1,9 @@
 .root {
-  @apply relative text-sm bg-accent-0 text-base w-full transition-colors duration-150 border border-accent-2;
+  @apply relative text-sm bg-accent-0 text-base w-full transition-colors duration-150 border border-accent-2 h-10 rounded-md flex-grow cursor-pointer bg-yellow-400 hover:bg-yellow-500;
 }
 
 .input {
-  @apply bg-transparent px-3 py-2 appearance-none w-full transition duration-150 ease-in-out pr-10;
+  @apply p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4;
 }
 
 .input::placeholder {

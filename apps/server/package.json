@@ -23,10 +23,13 @@
     "test": "NODE_ENV=test jest --detectOpenHandles",
     "test:watch": "NODE_ENV=test jest --watch --detectOpenHandles",
     "test:cov": "NODE_ENV=test jest --coverage --detectOpenHandles",
-    "watch": "tsc -w -p tsconfig.json"
+    "watch": "tsc -w -p tsconfig.json",
+    "generate": "./node_modules/.bin/medex g",
+    "migrate": "./node_modules/.bin/medex m"
   },
   "dependencies": {
     "@medusajs/medusa": "1.x",
+    "@trpc/server": "^10.0.0-rc.8",
     "awilix": "^4.2.3",
     "bcrypt": "^5.0.1",
     "class-transformer": "^0.5.1",
@@ -48,7 +51,8 @@
     "reflect-metadata": "^0.1.13",
     "swagger-parser": "^10.0.3",
     "swagger-stats": "^0.99.2",
-    "typeorm": "^0.2.41"
+    "typeorm": "^0.2.41",
+    "zod": "^3.19.1"
   },
   "devDependencies": {
     "@golevelup/ts-jest": "^0.3.2",

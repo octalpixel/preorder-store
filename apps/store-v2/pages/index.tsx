@@ -54,7 +54,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         return data.cart.id;
     };
 
-    try {s
+    try {
         const searchProps = await getSearchStaticProps();
 
         let cartId = cookies[CART_KEY];

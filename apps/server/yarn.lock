@@ -1769,9 +1769,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@medusajs/medusa-cli@npm:^1.3.3":
-  version: 1.3.3
-  resolution: "@medusajs/medusa-cli@npm:1.3.3"
+"@medusajs/medusa-cli@npm:^1.3.5":
+  version: 1.3.5
+  resolution: "@medusajs/medusa-cli@npm:1.3.5"
   dependencies:
     "@babel/polyfill": ^7.8.7
     "@babel/runtime": ^7.9.6
@@ -1788,7 +1788,7 @@ __metadata:
     is-valid-path: ^0.1.1
     meant: ^1.0.1
     medusa-core-utils: ^1.1.31
-    medusa-telemetry: 0.0.13
+    medusa-telemetry: 0.0.15
     netrc-parser: ^3.1.6
     open: ^8.0.6
     ora: ^5.4.1
@@ -1803,15 +1803,15 @@ __metadata:
     yargs: ^15.3.1
   bin:
     medusa: cli.js
-  checksum: c02acb6c90d7e2b42fe11d650c55c10a097f417e2a31f1d625ac94f2c70a07b775be5668564115c5f6247117e3c66a525bf7b91e83861fe1a29b064974105512
+  checksum: 8a0a02fe859ab35b1c08fc4972918c3909c8c3b7e0505bf37b48af7fdc9c51dbc8c3886e5a56812086f2236ff75abc6733e8582348c0f1e3748c521417a1174b
   languageName: node
   linkType: hard
 
 "@medusajs/medusa@npm:1.x":
-  version: 1.5.0
-  resolution: "@medusajs/medusa@npm:1.5.0"
+  version: 1.6.5
+  resolution: "@medusajs/medusa@npm:1.6.5"
   dependencies:
-    "@medusajs/medusa-cli": ^1.3.3
+    "@medusajs/medusa-cli": ^1.3.5
     "@types/ioredis": ^4.28.10
     "@types/lodash": ^4.14.168
     awilix: ^4.2.3
@@ -1833,7 +1833,7 @@ __metadata:
     ioredis-mock: ^5.6.0
     iso8601-duration: ^1.3.0
     jsonwebtoken: ^8.5.1
-    medusa-core-utils: ^1.1.32
+    medusa-core-utils: ^1.1.35
     medusa-test-utils: ^1.1.37
     morgan: ^1.9.1
     multer: ^1.4.2
@@ -1859,7 +1859,7 @@ __metadata:
     typeorm: 0.2.x
   bin:
     medusa: cli.js
-  checksum: fae0c1e992ae0122f0eda178fd324d5eadfe6d8139678d7161c283addc6d83d9a27cb2f820419d26c28a9e3ffebbf6424ecde13ad92940b311dd678e6b8d4cff
+  checksum: c3482d4d6fea0aded2a36f3574981413ad3cca4556a3ac20f34ff8cef38301acd75639db12c3918d44db0362974c70eaf37e2b0720f9c49ccf440ae0962bc12e
   languageName: node
   linkType: hard
 
@@ -2068,6 +2068,7 @@ __metadata:
   dependencies:
     "@golevelup/ts-jest": ^0.3.2
     "@medusajs/medusa": 1.x
+    "@trpc/server": ^10.0.0-rc.8
     "@types/bcrypt": ^5.0.0
     "@types/express": ^4.17.13
     "@types/jest": ^27.0.3
@@ -2105,6 +2106,7 @@ __metadata:
     tsconfig-paths: ^3.12.0
     typeorm: ^0.2.41
     typescript: ^4.5.2
+    zod: ^3.19.1
   languageName: unknown
   linkType: soft
 
@@ -2167,6 +2169,13 @@ __metadata:
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
   checksum: ad87447820dd3f24825d2d947ebc03072b20a42bfc96cbafec16bff8bbda6c1a81fcb0be56d5b21968560c5359a0af4038a68ba150c3e1694fe4c109a063bed8
+  languageName: node
+  linkType: hard
+
+"@trpc/server@npm:^10.0.0-rc.8":
+  version: 10.0.0-rc.8
+  resolution: "@trpc/server@npm:10.0.0-rc.8"
+  checksum: 2e36bac6a12024b7f20ca1fe9e350fa9c157a91dce6c59bbf273c0cd8f71535541d3ff538a83f09b76bed9526dbbebb252c00a055514baf9b199fe1bbe641922
   languageName: node
   linkType: hard
 
@@ -7379,6 +7388,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"medusa-core-utils@npm:^1.1.35":
+  version: 1.1.35
+  resolution: "medusa-core-utils@npm:1.1.35"
+  dependencies:
+    joi: ^17.3.0
+    joi-objectid: ^3.0.1
+  checksum: 3780448916630f1bed7050cdfeb4d9ea6c917b9c0eaadb50c486b4d2f7855c652f58c1b136d511b1dc5777b6541b61e7528c1b99ca1d351f96e2dc7e07a08c3b
+  languageName: node
+  linkType: hard
+
 "medusa-extender@npm:1.x":
   version: 1.7.6
   resolution: "medusa-extender@npm:1.7.6"
@@ -7452,9 +7471,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"medusa-telemetry@npm:0.0.13":
-  version: 0.0.13
-  resolution: "medusa-telemetry@npm:0.0.13"
+"medusa-telemetry@npm:0.0.15":
+  version: 0.0.15
+  resolution: "medusa-telemetry@npm:0.0.15"
   dependencies:
     axios: ^0.21.1
     axios-retry: ^3.1.9
@@ -7465,7 +7484,7 @@ __metadata:
     is-docker: ^2.2.1
     remove-trailing-slash: ^0.1.1
     uuid: ^8.3.2
-  checksum: fb1acbe4069356f8ee66e2e4e5c40d4d411f8520afa3b6f50729a2d417e4aeb6e6b26678eeb16bd084ea97c2a189c62ef92ee9f70d4a124b7a2ab772227c3960
+  checksum: 907779571a0989a38a458ac75978f8463caaffbfa2d6ef5f4dd1a4dc2a8f8e85c3c2906f6c8ba08963011768a02f8a1414cf865521169f4d95dc6d29053f39f0
   languageName: node
   linkType: hard
 
@@ -11172,5 +11191,12 @@ __metadata:
   version: 0.8.15
   resolution: "zen-observable@npm:0.8.15"
   checksum: b7289084bc1fc74a559b7259faa23d3214b14b538a8843d2b001a35e27147833f4107590b1b44bf5bc7f6dfe6f488660d3a3725f268e09b3925b3476153b7821
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.19.1":
+  version: 3.19.1
+  resolution: "zod@npm:3.19.1"
+  checksum: 56e420ea5845912324a8fc61833714a2aec84954e418b52660d76502183c6e62fef9447cbfa64349640c5ce190cf2c24267e006bb80f066183e2f3fa9fe11864
   languageName: node
   linkType: hard

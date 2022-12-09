@@ -1,9 +1,19 @@
 import { IconProps } from "src/types/icon";
+import Image from "next/image"
 
 export const Logo: React.FC<IconProps & { short?: boolean }> = ({
     short,
     ...props
 }) => {
+    return (
+        <Image
+              src="https://links.papareact.com/f90"
+              width={150}
+              height={40}
+              objectFit="contain"
+              className="cursor-pointer"
+            />
+    )
     return short ? (
         <svg
             width={40}
