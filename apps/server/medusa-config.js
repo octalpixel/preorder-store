@@ -40,11 +40,15 @@ module.exports = {
 
 		// database_url: `postgres://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/medusa`,
 		// database_url: 'postgres://postgres:Asdfgh!123456@vurjxubstslogjscxdpk.db.ap-southeast-1.nhost.run:5432/vurjxubstslogjscxdpk',
-		database_url: 'postgres://postgres:kHDNHTDNVFKpRCX2@awimzpghgnkuhcslexog.db.ap-southeast-1.nhost.run:5432/awimzpghgnkuhcslexog?sslmode=require',
+		// database_url: 'postgres://postgres:kHDNHTDNVFKpRCX2@awimzpghgnkuhcslexog.db.ap-southeast-1.nhost.run:5432/awimzpghgnkuhcslexog?sslmode=require',
+		database_url: "postgres://postgres:yVJ4rSg8m9QrbYrC@awimzpghgnkuhcslexog.db.ap-southeast-1.nhost.run:5432/awimzpghgnkuhcslexog?sslmode=verify-full",
 		database_type: 'postgres',
 		store_cors: STORE_CORS,
 		admin_cors: ADMIN_CORS,
-		sslmode: 'require',
+		database_extra: {
+			sslmode: "verify-full",
+			encrypt: true,
+		},
 		// redis_url: REDIS_URL,
 		cli_migration_dirs: ["dist/**/*.migration.js"]
 	},

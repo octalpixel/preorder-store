@@ -2062,12 +2062,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@prisma/client@npm:^4.7.1":
+  version: 4.7.1
+  resolution: "@prisma/client@npm:4.7.1"
+  dependencies:
+    "@prisma/engines-version": 4.7.1-1.272861e07ab64f234d3ffc4094e32bd61775599c
+  peerDependencies:
+    prisma: "*"
+  peerDependenciesMeta:
+    prisma:
+      optional: true
+  checksum: 01ce4c7382d80a1cca256e532a773d982ada9b7f64acd6bb590415634d04305413cee700048287dbf94f09ccf31e19db03a4a6501bfd0a01509f80498ee58121
+  languageName: node
+  linkType: hard
+
+"@prisma/engines-version@npm:4.7.1-1.272861e07ab64f234d3ffc4094e32bd61775599c":
+  version: 4.7.1-1.272861e07ab64f234d3ffc4094e32bd61775599c
+  resolution: "@prisma/engines-version@npm:4.7.1-1.272861e07ab64f234d3ffc4094e32bd61775599c"
+  checksum: 66221f1805ce700a4f9f0b6751a291d7114afff9d8b61fd03beb9bbe8b45b037fc67ee0425f45bbad57b7bf95cf649a490d5caaf75a4f3a7e17b3187ea8a6a15
+  languageName: node
+  linkType: hard
+
 "@quynguyen/store-server@workspace:.":
   version: 0.0.0-use.local
   resolution: "@quynguyen/store-server@workspace:."
   dependencies:
     "@golevelup/ts-jest": ^0.3.2
     "@medusajs/medusa": 1.x
+    "@prisma/client": ^4.7.1
     "@trpc/server": ^10.0.0-rc.8
     "@types/bcrypt": ^5.0.0
     "@types/express": ^4.17.13

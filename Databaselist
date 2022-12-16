@@ -1,0 +1,14 @@
+postgresql://<DB USER>:<DB PASSWORD>@ap-southeast-1.aae6e136-35fa-43a9-9d06-603636678327.aws.ybdb.io:5433/yugabyte?ssl=true&sslmode=require
+
+admin:bQga8maoJPK91kdVd1JaUnvMJ2o-9q
+
+
+
+cockroach
+xuanquy:1TO7hF8kDFFfIFftlMJPjA
+postgresql://xuanquy:1TO7hF8kDFFfIFftlMJPjA@oilier-hunter-3336.6xw.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full
+
+
+nhost
+postgres://postgres:yVJ4rSg8m9QrbYrC@awimzpghgnkuhcslexog.db.ap-southeast-1.nhost.run:5432/awimzpghgnkuhcslexog
+yVJ4rSg8m9QrbYrC

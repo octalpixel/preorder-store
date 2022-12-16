@@ -46,3 +46,4 @@ dist
 THUMBS_DB
 thumbs.db
 packages/.DS_Store
+apps/server/.yarn/install-state.gz

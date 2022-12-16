@@ -6,7 +6,7 @@ export default class addStoreIdToUser1611063162649 implements MigrationInterface
 	name = 'addStoreIdToUser1611063162649';
 
 	public async up(queryRunner: QueryRunner): Promise<void> {
-		const query = `ALTER TABLE public."user" ADD COLUMN IF NOT EXISTS "store_id" text;`;
+		const query = `SET enable_experimental_alter_column_type_general = true; ALTER TABLE public."user" ADD COLUMN IF NOT EXISTS "store_id" text;`;
 		await queryRunner.query(query);
 	}
 

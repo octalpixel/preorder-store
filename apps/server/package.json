@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@medusajs/medusa": "1.x",
+    "@prisma/client": "^4.7.1",
     "@trpc/server": "^10.0.0-rc.8",
     "awilix": "^4.2.3",
     "bcrypt": "^5.0.1",
